@@ -1,0 +1,68 @@
+---
+title: "Untitled"
+author: "Mubashira Qari"
+date: "December 24, 2022"
+output: html_document
+---
+
+Column Vector - list of vectors stacked on top of each other
+```{r}
+a <- c(1, 3, 2)
+a
+```
+
+Transpose a vector- turning a column vector to row vector
+```{r}
+t(a)
+```
+
+Transposing twice turn back to column vector
+```{r}
+b <- t(a) 
+c <- t(b)
+c
+```
+Multiplying a vector by a number
+```{r}
+7 * a
+```
+Vector Addition
+```{r}
+a <- c(1,3, 2)
+b <- c(2, 8, 9)
+a+b
+
+```
+Inner product of vectors
+```{r}
+a.b = a1b1 + a2b2 + ...
+sum(a*b)
+```
+
+
+Length (norm) of a vector
+```{r}
+sqrt(sum(a*a))
+```
+```{r}
+# column by column matrix
+A <- matrix(c(1, 3, 2, 2, 8, 9), ncol = 3)
+A*7
+```
+```{r}
+# row by row matrix
+A <- matrix(c(1, 3, 2, 2, 8, 9), ncol = 3, byrow = T)
+```
+
+
+```{r}
+# transpose of matrix
+t(A)
+```
+```{r}
+# Multiplication of Matrix and a vector
+
+A %*% a
+```
+
+
